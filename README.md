@@ -4,30 +4,15 @@
 
 주요 기능 및 구성
 
-data/: 공공데이터포털에서 수집한 CSV 원본 데이터
+source:
+- 찐막.xlsx: 전국 정신병원 분포와 위/경도가 포함된 엑셀 데이터셋
+- sig.dbf, sig.shp: 전국 시군구단위 선 지도 및 지오데이터 파일
+- 시군구_인구밀도.xlsx: 전국 시군구단위 인구밀도 및 지오데이터 파일
+- 전국 법정동.csv: 시군구 코드 <-> 지오데이터 변환을 위한 메타데이터
+- 한국 시군구 지역코드.xlsx: 반복 누락되는 지역들의 데이터들을 따로 모아놓은 엑셀 파일
+- GDRP.xlsx: 시군구 단위 GDP 계산을 위한 지역별 총생산 데이터
 
-service_usage.csv (정신병원 진료인원 및 이용자 수)
-
-facility_status.csv (정신건강 관련 기관 설치 현황)
-
-population_economy.csv (시도별 인당 소득 및 지역내총생산)
-
-notebooks/Main.ipynb: 데이터 준비, 탐색, 시각화 코드 및 분석 모델 구축 과정이 포함된 Jupyter Notebook fileciteturn1file0
-
-scripts/visualization.py: Folium 지도 및 인구 밀도, 정신병원 위치 시각화 코드
-
-scripts/modeling.py: 군집 분석 및 회귀분석 모델링 코드
-
-docs/: 프로젝트 문서
-
-presentation/빅데이터 이해와 분석 발표 초안.pptx (발표 자료) fileciteturn1file1
-
-design.md (분석 설계 및 개념 설명)
-
-requirements.txt (필요 라이브러리 목록)
-
-.github/: GitHub 워크플로우 및 이슈 템플릿
-
+notebooks/Main.ipynb: 데이터 준비, 탐색, 시각화 코드 및 분석 모델 구축 과정이 포함된 Jupyter Notebook
 설치 및 실행
 
 저장소 복제
@@ -59,27 +44,3 @@ Git 커밋 상태
 * 1b9d7e4 Update visualization.py with Folium map tooltips
 * 7cd8a9f Add initial notebook and data preprocessing steps
 * e5a3f00 Project structure 및 README 초안 작성
-
-문서
-
-분석 설계(docs/design.md): 핵심 기술 및 분석 흐름 설명
-
-발표 자료(docs/presentation/빅데이터 이해와 분석 발표 초안.pptx)
-
-요구사항 목록(docs/requirements.txt)
-
-기여
-
-이슈 생성
-
-브랜치 생성 (git checkout -b feature/your-feature)
-
-변경 사항 커밋 (git commit -m 'Add your feature')
-
-브랜치 푸시 (git push origin feature/your-feature)
-
-풀 리퀘스트 생성
-
-라이선스
-
-MIT 라이선스
